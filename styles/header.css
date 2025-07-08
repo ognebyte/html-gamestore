@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+}
+
+.header-hat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: var(--spacing);
+    font-size: 14px;
+    padding: var(--spacing-50) var(--page-padding-horizontal);
+    background-color: var(--secondary-background-color);
+
+    .work-time {
+        justify-self: center;
+    }
+    
+    .links {
+        justify-self: end;
+    }
+}
+
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    width: 100%;
+    gap: var(--spacing-200);
+    padding: var(--spacing) var(--page-padding-horizontal);
+}

@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #343A3F;
+    --primary-background-color: #4888FF;
+    --secondary-background-color: #F4F4F4;
+    --font-size-default: 16px;
+    --page-padding-horizontal: 40px;
+
+    --spacing-25: .25rem;
+    --spacing-50: .5rem;
+    --spacing-75: .75rem;
+    --spacing: 1rem;
+    --spacing-125: 1.25rem;
+    --spacing-150: 1.5rem;
+    --spacing-175: 1.75rem;
+    --spacing-200: 2rem;
+}

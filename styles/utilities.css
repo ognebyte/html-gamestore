@@ -1,0 +1,50 @@
+.flex-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.gap-25 {
+    gap: var(--spacing-25);
+}
+
+.gap-50 {
+    gap: var(--spacing-50);
+}
+
+.gap-75 {
+    gap: var(--spacing-75);
+}
+
+.gap {
+    gap: var(--spacing);
+}
+
+.gap-125 {
+    gap: var(--spacing-125);
+}
+
+.gap-150 {
+    gap: var(--spacing-150);
+}
+
+.gap-175 {
+    gap: var(--spacing-175);
+}
+
+.gap-200 {
+    gap: var(--spacing-200);
+}
+
+.button-default {
+    display: inline-flex;
+    gap: var(--spacing-50);
+    padding: var(--spacing) var(--spacing-200);
+    border: none;
+    border-radius: 8px;
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+.burger {
+    background-color: var(--primary-background-color);
+}
