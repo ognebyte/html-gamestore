@@ -7,6 +7,7 @@
     --secondary-hoverBorder-color: rgb(205, 190, 205);
     --secondary-background-color: rgb(244, 244, 244);
     --secondary-hoverBackground-color: rgb(212, 217, 221);
+    --catalog-menu-hoverBackground-color: rgb(243, 243, 243);
 
     --rem-default: 16px;
     
@@ -19,7 +20,7 @@
 
     --card-height-s: 2.625rem;
     --card-height: 3rem;
-    --card-height-l: 3.25rem;
+    --card-height-l: 3.125rem;
 
     --spacing-25: .25rem;
     --spacing-37: .375rem;
@@ -31,5 +32,6 @@
     --spacing-150: 1.5rem;
     --spacing-162: 1.625rem;
     --spacing-175: 1.75rem;
+    --spacing-187: 1.875rem;
     --spacing-200: 2rem;
 }

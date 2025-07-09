@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Кому",
+        "icon": "users.svg",
+        "subcategories": [
+            {
+                "title": "Кому",
+                "items": [
+                    {
+                        "title": "Для мужчин",
+                        "count": 123
+                    },
+                    {
+                        "title": "Для женщин",
+                        "count": 63
+                    },
+                    {
+                        "title": "Папе",
+                        "count": 120
+                    },
+                    {
+                        "title": "Сотрудникам",
+                        "count": 30
+                    },
+                    {
+                        "title": "Мужу",
+                        "count": 120
+                    },
+                    {
+                        "title": "Корпоративный",
+                        "count": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Повод",
+        "icon": "swrods.svg",
+        "subcategories": [
+            {
+                "title": "Праздники",
+                "items": [
+                    {
+                        "title": "Новый год",
+                        "count": 88
+                    },
+                    {
+                        "title": "День рождения",
+                        "count": 55
+                    },
+                    {
+                        "title": "Свадьба",
+                        "count": 33
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Наполнение",
+        "icon": "computer.svg",
+        "subcategories": [
+            {
+                "title": "Комплекты",
+                "items": [
+                    {
+                        "title": "Сладости",
+                        "count": 40
+                    },
+                    {
+                        "title": "Техника",
+                        "count": 60
+                    },
+                    {
+                        "title": "Аксессуары",
+                        "count": 30
+                    }
+                ]
+            }
+        ]
+    }
+]

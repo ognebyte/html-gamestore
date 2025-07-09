@@ -12,7 +12,7 @@
 
 .flex-row {
     display: inline-flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
 }
 
@@ -66,7 +66,7 @@ custom-button .button {
     gap: var(--spacing-62);
     border-radius: var(--spacing-25);
     background-color: var(--secondary-background-color);
-    transition: .2s ease-in;
+    transition: .2s ease;
     transition-property: color;
 
     svg {
@@ -86,6 +86,16 @@ custom-button:hover .button {
 custom-button[variant="primary"] .button {
     background-color: var(--primary-background-color);
     color: var(--primary-onBackground-color);
+    transition-property: background-color, color;
+    
+    svg {
+        color: inherit;
+    }
+}
+
+custom-button[variant="primary"]:hover .button {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
 }
 
 custom-button[variant="outline"] .button {

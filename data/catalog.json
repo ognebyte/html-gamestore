@@ -1,0 +1,208 @@
+[
+    {
+        "title": "Смартфоны и гаджеты",
+        "icon": "smartphone.svg",
+        "subcategories": [
+            {
+                "title": "Смартфоны",
+                "items": [
+                    {
+                        "title": "Apple iPhone",
+                        "count": 123
+                    },
+                    {
+                        "title": "iPhone 16",
+                        "count": 120
+                    },
+                    {
+                        "title": "Складные",
+                        "count": 30
+                    },
+                    {
+                        "title": "realme",
+                        "count": 120
+                    },
+                    {
+                        "title": "Huawei",
+                        "count": 100
+                    },
+                    {
+                        "title": "Кнопочные",
+                        "count": 23
+                    },
+                    {
+                        "title": "Домашние",
+                        "count": 17
+                    },
+                    {
+                        "title": "Samsung",
+                        "count": 27
+                    }
+                ]
+            },
+            {
+                "title": "Гаджеты",
+                "items": [
+                    {
+                        "title": "Смарт-часы",
+                        "count": 15
+                    },
+                    {
+                        "title": "Смарт-кольца",
+                        "count": 34
+                    },
+                    {
+                        "title": "Наушники",
+                        "count": 21
+                    },
+                    {
+                        "title": "Гарнитуры",
+                        "count": 12
+                    },
+                    {
+                        "title": "Портативное аудио",
+                        "count": 42
+                    },
+                    {
+                        "title": "Умные гаджеты",
+                        "count": 46
+                    },
+                    {
+                        "title": "Очки VR",
+                        "count": 49
+                    },
+                    {
+                        "title": "Для блогеров",
+                        "count": 32
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Ноутбуки и компьютеры",
+        "icon": "laptop.svg",
+        "subcategories": [
+            {
+                "title": "Ноутбуки",
+                "items": [
+                    {
+                        "title": "Игровые ноутбуки",
+                        "count": 53
+                    },
+                    {
+                        "title": "Бизнес-ноутбуки",
+                        "count": 74
+                    },
+                    {
+                        "title": "Ультрабуки",
+                        "count": 39
+                    }
+                ]
+            },
+            {
+                "title": "Компьютеры",
+                "items": [
+                    {
+                        "title": "Системные блоки",
+                        "count": 64
+                    },
+                    {
+                        "title": "Мини-ПК",
+                        "count": 24
+                    },
+                    {
+                        "title": "Моноблоки",
+                        "count": 31
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Телевизоры и цифровое ТВ",
+        "icon": "tv.svg",
+        "subcategories": [
+            {
+                "title": "Телевизоры",
+                "items": [
+                    {
+                        "title": "OLED",
+                        "count": 17
+                    },
+                    {
+                        "title": "4K UHD",
+                        "count": 43
+                    },
+                    {
+                        "title": "Smart TV",
+                        "count": 38
+                    }
+                ]
+            },
+            {
+                "title": "Приставки",
+                "items": [
+                    {
+                        "title": "Android TV",
+                        "count": 20
+                    },
+                    {
+                        "title": "Apple TV",
+                        "count": 9
+                    },
+                    {
+                        "title": "Спутниковые",
+                        "count": 13
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Аудиотехника",
+        "icon": "speaker.svg",
+        "subcategories": [
+            {
+                "title": "Наушники",
+                "items": [
+                    {
+                        "title": "Вкладыши",
+                        "count": 27
+                    },
+                    {
+                        "title": "Накладные",
+                        "count": 15
+                    },
+                    {
+                        "title": "Проводные",
+                        "count": 19
+                    }
+                ]
+            },
+            {
+                "title": "Колонки",
+                "items": [
+                    {
+                        "title": "Bluetooth-колонки",
+                        "count": 36
+                    },
+                    {
+                        "title": "Домашние",
+                        "count": 22
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Акции",
+        "icon": "fire.svg",
+        "link": "#promotions"
+    },
+    {
+        "title": "Новинки",
+        "icon": "new.svg",
+        "link": "#new-arrivals"
+    }
+]

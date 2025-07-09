@@ -1,0 +1,44 @@
+.catalog-wrapper {
+    position: absolute;
+    display: inline-flex;
+    padding-block: var(--spacing-175);
+    gap: var(--page-padding-horizontal);
+    border-radius: var(--spacing-50);
+    background-color: var(--primary-onBackground-color);
+    
+}
+
+.catalog-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-submenu-wrapper {
+    display: inline-flex;
+    gap: var(--page-padding-horizontal);
+}
+
+catalog-menu-item {
+    display: flex;
+    border-bottom: 1px solid var(--catalog-menu-hoverBackground-color);
+    transition: .2s ease background-color;
+}
+
+catalog-menu-item:hover {
+    background-color: var(--catalog-menu-hoverBackground-color);
+}
+
+catalog-menu-item .button {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    height: var(--card-height-l);
+    padding-inline: var(--spacing-187) var(--spacing-125);
+    gap: var(--spacing);
+
+    .chevron {
+        display: flex;
+        margin-left: auto;
+        padding-left: var(--spacing-37);
+    }
+}
