@@ -1,10 +1,27 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.container-inner {
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: auto;
+    padding-inline: var(--page-padding-horizontal);
+}
+
 .flex-row {
     display: inline-flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .gap-25 {
     gap: var(--spacing-25);
+}
+
+.gap-37 {
+    gap: var(--spacing-37);
 }
 
 .gap-50 {
@@ -35,16 +52,126 @@
     gap: var(--spacing-200);
 }
 
-.button-default {
-    display: inline-flex;
-    gap: var(--spacing-50);
-    padding: var(--spacing) var(--spacing-200);
-    border: none;
-    border-radius: 8px;
-    background-color: var(--secondary-background-color);
-    cursor: pointer;
+custom-button {
+    display: block;
 }
 
-.burger {
+custom-button .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: var(--spacing-75);
+    gap: var(--spacing-62);
+    border-radius: var(--spacing-25);
+    background-color: var(--secondary-background-color);
+    transition: .2s ease-in;
+    transition-property: color;
+
+    svg {
+        transition: inherit;
+        color: color-mix(in srgb, var(--primary-background-color) 100%, transparent 100%);
+    }
+}
+
+custom-button:hover .button {
+    color: var(--primary-background-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}
+
+custom-button[variant="primary"] .button {
     background-color: var(--primary-background-color);
+    color: var(--primary-onBackground-color);
+}
+
+custom-button[variant="outline"] .button {
+    background-color: transparent;
+    border: 1px solid var(--secondary-border-color);
+    transition-property: border-color, color;
+
+    svg {
+        color: var(--primary-color);
+    }
+}
+
+custom-button[variant="outline"]:hover .button {
+    border-color: var(--secondary-hoverBorder-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}
+
+custom-button[variant="link"] .button {
+    color: var(--primary-background-color);
+    transition-property: background-color, color;
+
+    svg {
+        color: inherit;
+    }
+}
+
+custom-button[variant="link"]:hover .button {
+    background-color: var(--primary-background-color);
+    color: var(--primary-onBackground-color);
+
+    svg {
+        color: inherit;
+    }
+}
+
+custom-button[variant="icon"] .button {
+    transition-property: background-color, color;
+
+    svg {
+        color: var(--primary-color);
+    }
+}
+
+custom-button[variant="icon"]:hover .button {
+    background-color: var(--secondary-hoverBackground-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}
+
+.card-s {
+    height: var(--card-height-s);
+}
+
+.card {
+    height: var(--card-height);
+}
+
+.card-l {
+    height: var(--card-height-l);
+}
+
+.border-radius-s {
+    border-radius: var(--spacing-25);
+}
+
+.border-radius {
+    border-radius: var(--spacing-50);
+}
+
+.border-radius-l {
+    border-radius: var(--spacing-75);
+}
+
+.font-size-s {
+    font-size: var(--font-size-s);
+}
+
+.font-size {
+    font-size: var(--font-size);
+}
+
+.font-size-l {
+    font-size: var(--font-size-l);
 }

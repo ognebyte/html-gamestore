@@ -16,7 +16,7 @@
 
 html {
     color: var(--primary-color);
-    font-size: var(--font-size-default);
+    font-size: var(--rem-default);
     font-family: "Maza", monospace;
     font-weight: normal;
 }
@@ -33,16 +33,18 @@ main {
     background: linear-gradient(95.31deg, #672870 20%, #4FE0FF 100%);
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
 a {
     color: inherit;
     text-decoration: none;
-    transition: opacity .2s ease-in;
 }
 
-a:hover {
-    opacity: .6;
-}
-
-a:active {
-    opacity: .4;
+svg {
+    flex-shrink: 0;
 }

@@ -1,30 +1,95 @@
 header {
     width: 100%;
-}
 
-.header-hat {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    gap: var(--spacing);
-    font-size: 14px;
-    padding: var(--spacing-50) var(--page-padding-horizontal);
-    background-color: var(--secondary-background-color);
-
-    .work-time {
-        justify-self: center;
+    .hat-wrapper {
+        background-color: var(--secondary-background-color);
     }
-    
-    .links {
-        justify-self: end;
+
+    .hat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-block: var(--spacing-50);
+        gap: var(--spacing);
+        font-size: var(--font-size-s);
+
+        .work-time {
+            justify-self: center;
+        }
+
+        .links {
+            justify-self: end;
+
+            a {
+                transition: color .2s ease-in;
+            }
+
+            a:hover {
+                color: var(--primary-background-color);
+            }
+        }
     }
-}
 
+    .content {
+        display: inline-flex;
+        gap: var(--spacing-200);
+        padding-block: var(--spacing);
 
-.header-content {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    width: 100%;
-    gap: var(--spacing-200);
-    padding: var(--spacing) var(--page-padding-horizontal);
+        .logo-wrapper {
+            color: var(--primary-background-color);
+        }
+
+        .interactive {
+            display: grid;
+            grid-template-rows: var(--card-height) var(--card-height-s);
+            gap: var(--spacing);
+
+            .start,
+            .end {
+                display: inline-flex;
+                gap: var(--spacing);
+                justify-content: space-between;
+            }
+        }
+
+        .lang {
+            color: color-mix(in srgb, var(--primary-color) 100%, transparent 100%);
+
+            .lang-button {
+                color: inherit;
+                transition: color 0.2s ease-in;
+            }
+
+            .lang-button.active {
+                color: var(--primary-color);
+                pointer-events: none;
+            }
+
+        }
+
+        .burger button {
+            padding-inline: var(--spacing-175);
+        }
+
+        .search-bar-wrapper {
+            flex: 1;
+            display: inline-flex;
+            padding: calc(var(--spacing-25) - 1px);
+            gap: var(--spacing-25);
+            border: 1px solid var(--primary-border-color);
+
+            input {
+                flex: 1;
+                border: none;
+                padding-inline: var(--spacing-25);
+            }
+        }
+
+        .messengers {
+            margin-left: var(--spacing-62);
+        }
+
+        .additions {
+            margin-left: auto;
+        }
+    }
 }

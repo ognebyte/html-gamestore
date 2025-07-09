@@ -1,16 +1,35 @@
 :root {
-    --primary-color: #343A3F;
-    --primary-background-color: #4888FF;
-    --secondary-background-color: #F4F4F4;
-    --font-size-default: 16px;
+    --primary-color: rgb(52, 58, 63);
+    --primary-background-color: rgb(72, 136, 255);
+    --primary-onBackground-color: rgb(255, 255, 255);
+    --primary-border-color: rgba(72, 136, 255, .2);
+    --secondary-border-color: rgb(211, 211, 211);
+    --secondary-hoverBorder-color: rgb(205, 190, 205);
+    --secondary-background-color: rgb(244, 244, 244);
+    --secondary-hoverBackground-color: rgb(212, 217, 221);
+
+    --rem-default: 16px;
+    
+    --font-size-s: 14px;
+    --font-size: 16px;
+    --font-size: 18px;
+
+    --page-max-width: 1440px;
     --page-padding-horizontal: 40px;
 
+    --card-height-s: 2.625rem;
+    --card-height: 3rem;
+    --card-height-l: 3.25rem;
+
     --spacing-25: .25rem;
+    --spacing-37: .375rem;
     --spacing-50: .5rem;
+    --spacing-62: .625rem;
     --spacing-75: .75rem;
     --spacing: 1rem;
     --spacing-125: 1.25rem;
     --spacing-150: 1.5rem;
+    --spacing-162: 1.625rem;
     --spacing-175: 1.75rem;
     --spacing-200: 2rem;
 }
