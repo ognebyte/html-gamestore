@@ -8,10 +8,6 @@ export class CustomButton extends HTMLElement {
             button.href = this.getAttribute('button-href');
         } else {
             button = document.createElement('button');
-            button.addEventListener('click', (e) => {
-                this.dispatchEvent(new Event('click'));
-                console.log(e.target)
-            });
         }
         button.classList.add('button')
         button.innerHTML = this.innerHTML;

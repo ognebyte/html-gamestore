@@ -1,31 +1,91 @@
 .catalog-wrapper {
     position: absolute;
-    display: inline-flex;
+    top: calc(100% + var(--spacing));
+    display: none;
+    min-width: max-content;
     padding-block: var(--spacing-175);
-    gap: var(--page-padding-horizontal);
     border-radius: var(--spacing-50);
     background-color: var(--primary-onBackground-color);
-    
-}
+    box-shadow: 0 0 10px 0 var(--shadow-color);
 
-.catalog-menu-wrapper {
-    display: flex;
-    flex-direction: column;
-}
+    .catalog-menu-wrapper {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
-.catalog-submenu-wrapper {
-    display: inline-flex;
-    gap: var(--page-padding-horizontal);
+    .catalog-submenu-wrapper {
+        display: inline-flex;
+        padding-inline: var(--page-padding-horizontal);
+        gap: var(--page-padding-horizontal);
+    }
+
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-187);
+        padding-inline: var(--spacing-187) var(--spacing-125);
+        margin-bottom: var(--spacing-150);
+    }
+
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing);
+    }
+
+    .submenu-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .submenu-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing);
+    }
+
+    .submenu-content-item {
+        display: inline-flex;
+        min-width: 200px;
+        gap: var(--spacing-25);
+        transition: .2s ease;
+        transition-property: color, opacity;
+    }
+
+    .submenu-content-item:hover {
+        color: var(--primary-background-color);
+
+        .item-count {
+            transition: inherit;
+            opacity: 1;
+        }
+        
+        .chevron-wrapper {
+            transition: inherit;
+            opacity: .5;
+        }
+    }
+
+    .item-count {
+        opacity: .5;
+    }
 }
 
 catalog-menu-item {
     display: flex;
     border-bottom: 1px solid var(--catalog-menu-hoverBackground-color);
-    transition: .2s ease background-color;
-}
 
-catalog-menu-item:hover {
-    background-color: var(--catalog-menu-hoverBackground-color);
+    .icon-wrapper {
+        color: var(--primary-background-color);
+        opacity: .5;
+        transition: inherit;
+        transition-property: opacity;
+    }
+
+    .chevron-wrapper {
+        transition: inherit;
+        transition-property: color, opacity;
+    }
 }
 
 catalog-menu-item .button {
@@ -35,10 +95,29 @@ catalog-menu-item .button {
     height: var(--card-height-l);
     padding-inline: var(--spacing-187) var(--spacing-125);
     gap: var(--spacing);
+    transition: .2s ease;
+    transition-property: background-color;
+}
 
-    .chevron {
-        display: flex;
-        margin-left: auto;
-        padding-left: var(--spacing-37);
+catalog-menu-item:hover .button {
+    background-color: var(--catalog-menu-hoverBackground-color);
+
+    .icon-wrapper {
+        opacity: 1;
     }
+}
+
+catalog-menu-item.active .button {
+    background-color: var(--catalog-menu-hoverBackground-color);
+
+    .chevron-wrapper {
+        color: var(--primary-background-color);
+        opacity: .5;
+    }
+}
+
+.chevron-wrapper {
+    display: flex;
+    margin-left: auto;
+    padding-left: var(--spacing-37);
 }

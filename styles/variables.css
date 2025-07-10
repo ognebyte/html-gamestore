@@ -8,12 +8,14 @@
     --secondary-background-color: rgb(244, 244, 244);
     --secondary-hoverBackground-color: rgb(212, 217, 221);
     --catalog-menu-hoverBackground-color: rgb(243, 243, 243);
+    --shadow-color: rgba(157, 157, 157, .35);
 
     --rem-default: 16px;
     
     --font-size-s: 14px;
     --font-size: 16px;
-    --font-size: 18px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
 
     --page-max-width: 1440px;
     --page-padding-horizontal: 40px;
@@ -34,4 +36,10 @@
     --spacing-175: 1.75rem;
     --spacing-187: 1.875rem;
     --spacing-200: 2rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --font-size-xl: 30px;
+    }
 }

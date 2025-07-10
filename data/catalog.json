@@ -2,41 +2,69 @@
     {
         "title": "Смартфоны и гаджеты",
         "icon": "smartphone.svg",
-        "subcategories": [
+        "items": [
             {
                 "title": "Смартфоны",
                 "items": [
                     {
                         "title": "Apple iPhone",
+                        "link": "#iphone",
                         "count": 123
                     },
                     {
                         "title": "iPhone 16",
+                        "link": "#iphone16",
                         "count": 120
                     },
                     {
                         "title": "Складные",
-                        "count": 30
+                        "items": [
+                            {
+                                "title": "Samsung Fold",
+                                "link": "#fold",
+                                "count": 35
+                            },
+                            {
+                                "title": "Huawei Mate X",
+                                "link": "#matex",
+                                "count": 28
+                            }
+                        ]
                     },
                     {
                         "title": "realme",
-                        "count": 120
+                        "link": "#realme",
+                        "count": 75
                     },
                     {
                         "title": "Huawei",
-                        "count": 100
+                        "link": "#huawei",
+                        "count": 64
                     },
                     {
                         "title": "Кнопочные",
-                        "count": 23
-                    },
-                    {
-                        "title": "Домашние",
+                        "link": "#buttonphones",
                         "count": 17
                     },
                     {
+                        "title": "Домашние",
+                        "link": "#homephones",
+                        "count": 12
+                    },
+                    {
                         "title": "Samsung",
-                        "count": 27
+                        "items": [
+                            {
+                                "title": "Galaxy S",
+                                "link": "#galaxys",
+                                "count": 30
+                            },
+                            {
+                                "title": "Galaxy A",
+                                "link": "#galaxya",
+                                "count": 27
+                            }
+                        ]
                     }
                 ]
             },
@@ -45,35 +73,53 @@
                 "items": [
                     {
                         "title": "Смарт-часы",
-                        "count": 15
+                        "link": "#smartwatches",
+                        "count": 88
                     },
                     {
                         "title": "Смарт-кольца",
+                        "link": "#smartrings",
                         "count": 34
                     },
                     {
                         "title": "Наушники",
-                        "count": 21
+                        "items": [
+                            {
+                                "title": "TWS",
+                                "link": "#tws",
+                                "count": 57
+                            },
+                            {
+                                "title": "С проводом",
+                                "link": "#wired",
+                                "count": 22
+                            }
+                        ]
                     },
                     {
                         "title": "Гарнитуры",
-                        "count": 12
+                        "link": "#headsets",
+                        "count": 14
                     },
                     {
                         "title": "Портативное аудио",
+                        "link": "#portableaudio",
                         "count": 42
                     },
                     {
                         "title": "Умные гаджеты",
-                        "count": 46
-                    },
-                    {
-                        "title": "Очки VR",
-                        "count": 49
-                    },
-                    {
-                        "title": "Для блогеров",
-                        "count": 32
+                        "items": [
+                            {
+                                "title": "Очки VR",
+                                "link": "#vr",
+                                "count": 19
+                            },
+                            {
+                                "title": "Для блогеров",
+                                "link": "#bloggers",
+                                "count": 11
+                            }
+                        ]
                     }
                 ]
             }
@@ -82,21 +128,34 @@
     {
         "title": "Ноутбуки и компьютеры",
         "icon": "laptop.svg",
-        "subcategories": [
+        "items": [
             {
                 "title": "Ноутбуки",
                 "items": [
                     {
                         "title": "Игровые ноутбуки",
+                        "link": "#gaminglaptops",
                         "count": 53
                     },
                     {
                         "title": "Бизнес-ноутбуки",
-                        "count": 74
+                        "link": "#businesslaptops",
+                        "count": 41
                     },
                     {
                         "title": "Ультрабуки",
-                        "count": 39
+                        "items": [
+                            {
+                                "title": "MacBook Air",
+                                "link": "#macbookair",
+                                "count": 18
+                            },
+                            {
+                                "title": "ASUS Zenbook",
+                                "link": "#zenbook",
+                                "count": 25
+                            }
+                        ]
                     }
                 ]
             },
@@ -105,15 +164,28 @@
                 "items": [
                     {
                         "title": "Системные блоки",
-                        "count": 64
+                        "link": "#desktops",
+                        "count": 62
                     },
                     {
                         "title": "Мини-ПК",
-                        "count": 24
+                        "link": "#minipc",
+                        "count": 20
                     },
                     {
                         "title": "Моноблоки",
-                        "count": 31
+                        "items": [
+                            {
+                                "title": "iMac",
+                                "link": "#imac",
+                                "count": 14
+                            },
+                            {
+                                "title": "Huawei MateStation",
+                                "link": "#matestation",
+                                "count": 10
+                            }
+                        ]
                     }
                 ]
             }
@@ -122,20 +194,23 @@
     {
         "title": "Телевизоры и цифровое ТВ",
         "icon": "tv.svg",
-        "subcategories": [
+        "items": [
             {
                 "title": "Телевизоры",
                 "items": [
                     {
                         "title": "OLED",
+                        "link": "#oled",
                         "count": 17
                     },
                     {
                         "title": "4K UHD",
+                        "link": "#4k",
                         "count": 43
                     },
                     {
                         "title": "Smart TV",
+                        "link": "#smarttv",
                         "count": 38
                     }
                 ]
@@ -145,14 +220,17 @@
                 "items": [
                     {
                         "title": "Android TV",
+                        "link": "#androidtv",
                         "count": 20
                     },
                     {
                         "title": "Apple TV",
+                        "link": "#appletv",
                         "count": 9
                     },
                     {
                         "title": "Спутниковые",
+                        "link": "#satellite",
                         "count": 13
                     }
                 ]
@@ -162,21 +240,34 @@
     {
         "title": "Аудиотехника",
         "icon": "speaker.svg",
-        "subcategories": [
+        "items": [
             {
                 "title": "Наушники",
                 "items": [
                     {
                         "title": "Вкладыши",
+                        "link": "#vkladishi",
                         "count": 27
                     },
                     {
                         "title": "Накладные",
-                        "count": 15
+                        "items": [
+                            {
+                                "title": "Sony",
+                                "link": "#sony",
+                                "count": 19
+                            },
+                            {
+                                "title": "JBL",
+                                "link": "#jbl",
+                                "count": 22
+                            }
+                        ]
                     },
                     {
                         "title": "Проводные",
-                        "count": 19
+                        "link": "#provodniyi",
+                        "count": 15
                     }
                 ]
             },
@@ -185,10 +276,12 @@
                 "items": [
                     {
                         "title": "Bluetooth-колонки",
+                        "link": "#bluetooth",
                         "count": 36
                     },
                     {
                         "title": "Домашние",
+                        "link": "#homeaudio",
                         "count": 22
                     }
                 ]
@@ -198,11 +291,13 @@
     {
         "title": "Акции",
         "icon": "fire.svg",
-        "link": "#promotions"
+        "link": "#promotions",
+        "count": 5
     },
     {
         "title": "Новинки",
         "icon": "new.svg",
-        "link": "#new-arrivals"
+        "link": "#new-arrivals",
+        "count": 12
     }
 ]
