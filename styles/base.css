@@ -36,6 +36,7 @@ main {
 button {
     border: none;
     background-color: transparent;
+    color: inherit;
     font: inherit;
     cursor: pointer;
 }

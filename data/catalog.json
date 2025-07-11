@@ -291,13 +291,11 @@
     {
         "title": "Акции",
         "icon": "fire.svg",
-        "link": "#promotions",
-        "count": 5
+        "link": "#promotions"
     },
     {
         "title": "Новинки",
         "icon": "new.svg",
-        "link": "#new-arrivals",
-        "count": 12
+        "link": "#new-arrivals"
     }
 ]

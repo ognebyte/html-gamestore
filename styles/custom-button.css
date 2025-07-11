@@ -1,0 +1,98 @@
+
+.default-button {
+    display: block;
+}
+
+.default-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: var(--spacing-75);
+    gap: var(--spacing-62);
+    border-radius: var(--spacing-25);
+    background-color: var(--secondary-background-color);
+    transition: .2s ease;
+    transition-property: color;
+
+    svg {
+        transition: inherit;
+        color: color-mix(in srgb, var(--primary-background-color) 100%, transparent 100%);
+    }
+}
+
+.default-button:hover {
+    color: var(--primary-background-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}
+
+.default-button[variant="primary"] {
+    background-color: var(--primary-background-color);
+    color: var(--primary-onBackground-color);
+    transition-property: background-color, color;
+
+    svg {
+        color: inherit;
+    }
+}
+
+.default-button[variant="primary"]:hover {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+}
+
+.default-button[variant="outline"] {
+    background-color: transparent;
+    border: 1px solid var(--secondary-border-color);
+    transition-property: border-color, color;
+
+    svg {
+        color: var(--primary-color);
+    }
+}
+
+.default-button[variant="outline"]:hover {
+    border-color: var(--secondary-hoverBorder-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}
+
+.default-button[variant="link"] {
+    color: var(--primary-background-color);
+    transition-property: background-color, color;
+
+    svg {
+        color: inherit;
+    }
+}
+
+.default-button[variant="link"]:hover {
+    background-color: var(--primary-background-color);
+    color: var(--primary-onBackground-color);
+
+    svg {
+        color: inherit;
+    }
+}
+
+.default-button[variant="icon"] {
+    transition-property: background-color, color;
+
+    svg {
+        color: var(--primary-color);
+    }
+}
+
+.default-button[variant="icon"]:hover {
+    background-color: var(--secondary-hoverBackground-color);
+
+    svg {
+        color: var(--primary-background-color);
+    }
+}

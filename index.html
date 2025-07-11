@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/custom-button.css">
 
     <title>GameStore</title>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 
 <body>
@@ -71,41 +72,41 @@
 
                     <div class="interactive">
                         <div class="start">
-                            <custom-button class="burger" variant="primary" id="catalogButton">
+                            <button class="default-button burger" variant="primary" id="catalogButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" fill="none">
                                     <rect width="38" height="2" fill="currentColor" rx="1" />
                                     <rect width="38" height="2" y="14" fill="currentColor" rx="1" />
                                     <rect width="24" height="2" y="7" fill="currentColor" rx="1" />
                                 </svg>
-                            </custom-button>
+                            </button>
 
                             <div class="search-bar-wrapper border-radius">
                                 <input id="search" type="text" />
-                                <custom-button class="font-size-s" variant="primary">
+                                <button class="default-button font-size-s" variant="primary">
                                     Найти
-                                </custom-button>
+                                </button>
                             </div>
 
                             <div class="messengers flex-row gap-75">
-                                <custom-button button-href="#telegrem" variant="icon">
+                                <a class="default-button" href="#telegrem" variant="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                                         <path fill="currentColor"
                                             d="M23.53 1.966a1.45 1.45 0 0 0-1.432-.307L.995 8.615c-.575.19-.965.703-.993 1.308a1.439 1.439 0 0 0 .866 1.395l5.219 2.283 1.574 7.303c.066.304.22.574.546.657.33.084.563-.096.81-.28l3.872-2.9 4.528 3.704a1.44 1.44 0 0 0 1.382.251c.477-.161.83-.55.945-1.04l4.218-17.93a1.45 1.45 0 0 0-.432-1.4ZM9.354 14.91a.177.177 0 0 0-.008.021l-.873 3.05-.974-4.518 6.7-3.722-4.685 4.897a.704.704 0 0 0-.16.272Zm.277 4.15.396-1.386.38-1.325 1.358 1.112-2.134 1.599ZM22.589 3.043l-4.217 17.93c-.002.01-.005.021-.025.028-.02.007-.03 0-.038-.006l-4.954-4.055-2.296-1.878 7.375-7.711a.705.705 0 0 0-.852-1.103l-10.92 6.067-5.229-2.288c-.016-.007-.025-.011-.023-.038 0-.027.01-.03.027-.035l21.102-6.957c.01-.003.022-.007.039.009.017.015.014.027.011.037Z" />
                                     </svg>
-                                </custom-button>
+                                </a>
 
-                                <custom-button button-href="#whatsapp" variant="icon">
+                                <a class="default-button" href="#whatsapp" variant="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                                         <path fill="currentColor" fill-rule="evenodd"
                                             d="M20.13 3.27A11.077 11.077 0 0 0 12.243 0C6.098 0 1.096 5.001 1.093 11.149c0 1.965.513 3.883 1.489 5.574L1 22.5l5.91-1.55a11.137 11.137 0 0 0 5.328 1.357h.005c6.145 0 11.147-5.002 11.15-11.15A11.08 11.08 0 0 0 20.13 3.27Zm-7.887 17.154h-.004a9.256 9.256 0 0 1-4.716-1.292l-.339-.201-3.507.92.936-3.42-.22-.35a9.244 9.244 0 0 1-1.417-4.932c.002-5.11 4.16-9.266 9.27-9.266 2.476 0 4.803.966 6.552 2.718a9.212 9.212 0 0 1 2.712 6.556c-.002 5.11-4.16 9.267-9.267 9.267Zm5.083-6.94c-.278-.14-1.648-.814-1.904-.907-.255-.093-.44-.14-.626.14-.186.278-.72.906-.882 1.091-.163.187-.325.21-.604.07-.279-.14-1.176-.433-2.24-1.383-.829-.738-1.388-1.65-1.55-1.93-.162-.278-.002-.415.122-.568.302-.374.604-.767.697-.953.092-.186.046-.348-.024-.488s-.626-1.51-.859-2.068c-.226-.543-.455-.47-.627-.479-.162-.008-.348-.01-.533-.01-.186 0-.488.07-.743.35-.256.278-.975.952-.975 2.323 0 1.372.998 2.696 1.137 2.882.14.186 1.965 3 4.76 4.207.664.287 1.183.458 1.587.587.668.212 1.275.182 1.755.11.535-.08 1.648-.674 1.88-1.325.233-.65.233-1.208.163-1.324-.07-.117-.255-.186-.534-.326Z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                </custom-button>
+                                </a>
                             </div>
                         </div>
 
                         <div class="end">
-                            <custom-button>
+                            <button class="default-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                                     <path fill="currentColor"
                                         d="M12.898 15.508c0-1.069-.674-1.69-1.964-2.786-.292-.25-.607-.515-.932-.81-.371.34-.723.64-1.047.916-1.288 1.089-1.852 1.621-1.852 2.68a2.897 2.897 0 1 0 5.795 0Z" />
@@ -113,9 +114,9 @@
                                         d="M13.674 3.362c-1-.849-2.034-1.726-3.079-2.77L10 0l-.583.593C7.54 2.478 6.65 5.373 6.265 7.109a5.034 5.034 0 0 1-.649-1.487L5.26 4.258l-1.027.964c-1.8 1.69-3 3.365-3 6.049a8.685 8.685 0 0 0 6.5 8.483c.47.12.95.202 1.434.246a4.576 4.576 0 0 1-3.737-4.492c0-1.875 1.13-2.833 2.44-3.951.467-.398 1-.849 1.537-1.39l.593-.59.59.59c.48.48.96.887 1.425 1.282 1.313 1.114 2.553 2.167 2.553 4.06a4.574 4.574 0 0 1-3.713 4.486 8.759 8.759 0 0 0 7.912-8.723c0-3.585-2.36-5.589-5.093-7.91Z" />
                                 </svg>
                                 <p>Акции</p>
-                            </custom-button>
+                            </button>
 
-                            <custom-button>
+                            <button class="default-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
                                     <path fill="currentColor"
                                         d="M17.457 6.63a.586.586 0 0 0-.538-.354h-4.073L15.56.848A.586.586 0 0 0 15.036 0H6.877a.586.586 0 0 0-.544.369L2.567 9.782a.586.586 0 0 0 .544.804h4.783l-3.444 8.61a.586.586 0 0 0 .97.622L17.343 7.265a.586.586 0 0 0 .113-.634Z" />
@@ -123,9 +124,9 @@
                                         d="M17.457 6.63a.586.586 0 0 0-.538-.354h-4.073L15.56.848A.586.586 0 0 0 15.036 0h-5.02v14.98l7.328-7.715a.586.586 0 0 0 .113-.634Z" />
                                 </svg>
                                 <p>Горячее предложение</p>
-                            </custom-button>
+                            </button>
 
-                            <custom-button>
+                            <button class="default-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
                                     <g fill="currentColor" clip-path="url(#a)">
                                         <path
@@ -140,9 +141,9 @@
                                     </clipPath>
                                 </svg>
                                 <p>Подарочные наборы</p>
-                            </custom-button>
+                            </button>
 
-                            <custom-button>
+                            <button class="default-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
                                     <g fill="currentColor" clip-path="url(#a)">
                                         <path
@@ -159,9 +160,9 @@
                                     </clipPath>
                                 </svg>
                                 <p>События</p>
-                            </custom-button>
+                            </button>
 
-                            <custom-button>
+                            <button class="default-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                                     <g fill="currentColor" clip-path="url(#a)">
                                         <path
@@ -174,7 +175,7 @@
                                     </clipPath>
                                 </svg>
                                 <p>Наши бренды</p>
-                            </custom-button>
+                            </button>
                         </div>
 
                         <div class="catalog-wrapper">
@@ -196,16 +197,16 @@
 
                     <div class="interactive additions">
                         <div class="start flex-row gap">
-                            <custom-button button-href="#favorite" variant="outline">
+                            <a class="default-button" href="#favorite" variant="outline">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.0396 2.8001C16.0078 2.81615 14.9985 3.10418 14.1136 3.6351C13.2287 4.16602 12.4996 4.92103 11.9999 5.82389C11.5002 4.92103 10.7711 4.16602 9.88623 3.6351C9.00136 3.10418 7.99207 2.81615 6.96027 2.8001C5.31545 2.87157 3.76577 3.5911 2.64979 4.80152C1.53381 6.01193 0.942234 7.61483 1.00431 9.26002C1.00431 13.4264 5.38973 17.9768 9.06776 21.062C9.88896 21.7521 10.9273 22.1304 11.9999 22.1304C13.0726 22.1304 14.1109 21.7521 14.9321 21.062C18.6101 17.9768 22.9955 13.4264 22.9955 9.26002C23.0576 7.61483 22.466 6.01193 21.35 4.80152C20.2341 3.5911 18.6844 2.87157 17.0396 2.8001Z"
                                         fill="currentColor" />
                                 </svg>
-                            </custom-button>
+                            </a>
 
-                            <custom-button button-href="#hunt" variant="outline">
+                            <a class="default-button" href="#hunt" variant="outline">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2_1580)">
@@ -274,9 +275,9 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </custom-button>
+                            </a>
 
-                            <custom-button button-href="#cart" variant="outline">
+                            <a class="default-button" href="#cart" variant="outline">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2_1740)">
@@ -313,16 +314,16 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </custom-button>
+                            </a>
                         </div>
 
-                        <custom-button variant="link" button-href="#build-pc">
+                        <button class="default-button" variant="link" href="#build-pc">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     d="M8 3.333v9.334M3.333 8h9.334" />
                             </svg>
                             <p>Собрать компьютер</p>
-                        </custom-button>
+                        </button>
                     </div>
                 </div>
             </div>

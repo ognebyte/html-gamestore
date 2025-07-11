@@ -23,9 +23,9 @@
     .back-button {
         display: inline-flex;
         align-items: center;
-        gap: var(--spacing-187);
-        padding-inline: var(--spacing-187) var(--spacing-125);
         margin-bottom: var(--spacing-150);
+        margin-inline: var(--spacing-75) var(--spacing-37);
+        gap: var(--spacing-187);
     }
 
     .submenu {
@@ -46,6 +46,7 @@
 
     .submenu-content-item {
         display: inline-flex;
+        align-items: center;
         min-width: 200px;
         gap: var(--spacing-25);
         transition: .2s ease;
@@ -59,7 +60,7 @@
             transition: inherit;
             opacity: 1;
         }
-        
+
         .chevron-wrapper {
             transition: inherit;
             opacity: .5;
@@ -71,9 +72,15 @@
     }
 }
 
-catalog-menu-item {
-    display: flex;
+.catalog-menu-item {
+    display: inline-flex;
+    align-items: center;
+    height: var(--card-height-l);
+    padding-inline: var(--spacing-75) var(--spacing-37);
+    gap: var(--spacing);
     border-bottom: 1px solid var(--catalog-menu-hoverBackground-color);
+    transition: .2s ease;
+    transition-property: background-color;
 
     .icon-wrapper {
         color: var(--primary-background-color);
@@ -82,24 +89,18 @@ catalog-menu-item {
         transition-property: opacity;
     }
 
+    .title {
+        display: inline-flex;
+        gap: var(--spacing-50);
+    }
+
     .chevron-wrapper {
         transition: inherit;
         transition-property: color, opacity;
     }
 }
 
-catalog-menu-item .button {
-    flex: 1;
-    display: inline-flex;
-    align-items: center;
-    height: var(--card-height-l);
-    padding-inline: var(--spacing-187) var(--spacing-125);
-    gap: var(--spacing);
-    transition: .2s ease;
-    transition-property: background-color;
-}
-
-catalog-menu-item:hover .button {
+.catalog-menu-item:hover {
     background-color: var(--catalog-menu-hoverBackground-color);
 
     .icon-wrapper {
@@ -107,7 +108,7 @@ catalog-menu-item:hover .button {
     }
 }
 
-catalog-menu-item.active .button {
+.catalog-menu-item.active {
     background-color: var(--catalog-menu-hoverBackground-color);
 
     .chevron-wrapper {
@@ -120,4 +121,15 @@ catalog-menu-item.active .button {
     display: flex;
     margin-left: auto;
     padding-left: var(--spacing-37);
+}
+
+
+@media (min-width: 768px) {
+    .catalog-wrapper .back-button {
+        margin-inline: var(--spacing-187) var(--spacing-125);
+    }
+
+    .catalog-menu-item {
+        padding-inline: var(--spacing-187) var(--spacing-125);
+    }
 }
